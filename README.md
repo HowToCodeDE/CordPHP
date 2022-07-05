@@ -12,29 +12,29 @@ All items on the list are planned, the checked ones are already implemented.
 - [x] Authentication
 - [x] Fetch access token
 - [x] Get user information
-- [] Automatically join guilds
-- [] List the guilds of the user
+- [ ] Automatically join guilds
+- [ ] List the guilds of the user
 
 ## Bot
-- [] Write messages
-- [] Delete messages
-- [] Edit messages
-- [] Read messages
+- [ ] Write messages
+- [ ] Delete messages
+- [ ] Edit messages
+- [ ] Read messages
 
-- [] Create reactions
-- [] Read reactions
-- [] Delete reactions
+- [ ] Create reactions
+- [ ] Read reactions
+- [ ] Delete reactions
 
-- [] Create channels
-- [] Edit channels
-- [] Delete channels
+- [ ] Create channels
+- [ ] Edit channels
+- [ ] Delete channels
 
-- [] Create categories
-- [] Edit categories
-- [] Delete categories
+- [ ] Create categories
+- [ ] Edit categories
+- [ ] Delete categories
 
-- [] Create roles
-- [] Edit roles
-- [] Delete roles
+- [ ] Create roles
+- [ ] Edit roles
+- [ ] Delete roles
 
-- [] Edit users
+- [ ] Edit users
