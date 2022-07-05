@@ -38,3 +38,12 @@ All items on the list are planned, the checked ones are already implemented.
 - [ ] Delete roles
 
 - [ ] Edit users
+
+## Other features
+If you also want other features to be implemented, feel free to open a issue with the prefix "[FEATURE]"
+
+## Projects using CordPHP
+If you want to get your project listed here, you can contact me on Discord (bottom)
+
+## Contact
+If you have any questions, feel free to ask me on Discord: Florian#6969
