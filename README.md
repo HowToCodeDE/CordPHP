@@ -10,9 +10,10 @@ All items on the list are planned, the checked ones are already implemented.
 
 ## OAuth
 - [x] Authentication
+- [x] Logout
 - [x] Fetch access token
 - [x] Get user information
-- [ ] Automatically join guilds
+- [x] Automatically join guilds
 - [ ] List the guilds of the user
 
 ## Bot
