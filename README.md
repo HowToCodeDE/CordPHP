@@ -17,28 +17,12 @@ All items on the list are planned, the checked ones are already implemented.
 - [ ] List the guilds of the user
 
 ## Bot
-- [ ] Write messages
-- [ ] Delete messages
-- [ ] Edit messages
-- [ ] Read messages
-
-- [ ] Create reactions
-- [ ] Read reactions
-- [ ] Delete reactions
-
-- [ ] Create channels
-- [ ] Edit channels
-- [ ] Delete channels
-
-- [ ] Create categories
-- [ ] Edit categories
-- [ ] Delete categories
-
-- [ ] Create roles
-- [ ] Edit roles
-- [ ] Delete roles
-
-- [ ] Edit users
+- [ ] Manage messages
+- [ ] Manage reactions
+- [ ] Manage channels
+- [ ] Manage categories
+- [ ] Manage roles
+- [ ] Manage guild members
 
 ## Other features
 If you also want other features to be implemented, feel free to open a issue with the prefix "[FEATURE]"
