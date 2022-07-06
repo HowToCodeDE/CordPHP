@@ -73,15 +73,43 @@
             return $user;
         }
 
+        function joinGuild($guildId){
+            $user = $this->getUser();
+            
+            $url = "https://discordapp.com/api/v6/guilds/" . $guildId . "/members/" . $user->id;
+
+            $data = '{
+              "access_token": "' . $_SESSION['access_token'] . '"
+            }';
+  
+    
+            $ch = curl_init($url);
+            curl_setopt_array($ch, array(
+                CURLOPT_HTTPHEADER     => array(
+                    'Authorization: Bot ' . $this->botToken,
+                    "Content-Length: " . strlen($data),
+                    "Content-type: application/json"
+                ),
+                CURLOPT_RETURNTRANSFER => 1,
+                CURLOPT_CUSTOMREQUEST  => "PUT",
+                CURLOPT_FOLLOWLOCATION => 1,
+                CURLOPT_POSTFIELDS     => $data,
+                CURLOPT_VERBOSE        => 1,
+                CURLOPT_SSL_VERIFYPEER => 0
+            ));
+            $response = curl_exec($ch);
+            return json_decode($response);
+        }
+
         function logout(){
-            $date = array(
+            $data = array(
                 'token' => $_SESSION['access_token'],
                 'token_type_hint' => 'access_token',
                 'client_id' => $this->clientId,
                 'client_secret' => $this->clientSecret,
             );
 
-            $ch = curl_init($revokeURL);
+            $ch = curl_init($this->revokeURL);
             curl_setopt_array($ch, array(
                 CURLOPT_POST => TRUE,
                 CURLOPT_RETURNTRANSFER => TRUE,
@@ -91,9 +119,9 @@
             ));
             
             $response = curl_exec($ch);
-            return json_decode($response);
             unset($_SESSION['access_token']);
             header('Location: ' . $_SERVER['PHP_SELF']);
+            return json_decode($response);
             die();
         }
     }
