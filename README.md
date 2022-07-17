@@ -14,14 +14,13 @@ All items on the list are planned, the checked ones are already implemented.
 - [x] Fetch access token
 - [x] Get user information
 - [x] Automatically join guilds
-- [ ] List the guilds of the user
+- [x] List the guilds of the user
 
 ## Bot
 - [ ] Manage messages
 - [ ] Manage reactions
-- [ ] Manage channels
-- [ ] Manage categories
-- [ ] Manage roles
+- [x] Manage channels
+- [x] Manage roles
 - [ ] Manage guild members
 
 ## Other features
